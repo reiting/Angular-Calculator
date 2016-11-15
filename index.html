@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="RachelsCalculator">
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="CalculatorC">
+	<div class="container">
+		<div class="page-header">
+			<h1>Rachel's Calculator!</h1>
+		</div>
+        <input id="input1" type="number" ng-model="value.val1" placeholder="Operand 1">
+        <input id="input2" type="number" ng-model="value.val2" placeholder="Operand 2">
+        <div>       
+        <button ng-click="add()">+</button>
+        <button ng-click="subtract()">-</button>
+        <button ng-click="multiply()">*</button>
+        <button ng-click="divide()">/</button>
+    </div>
+    <p> {{ value.answer }}</p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+    <script src="controllers.js"></script>
+</body>
+
+</html>
